@@ -179,22 +179,38 @@ https://www.youtube.com/watch?v=ydXsMSV6iLQ&list=PLeFetwYAi-F_l-NP-TUE2MqKeu_haM
 
 **Commands:**
 df - Shows the capacity, free and used space of the filesystem
+
 df -h - Formats the sizes of files in a human-readable fashion (also shows units like GB, K...) 
+
 hostname - To get the hostname
+
 hdfs dfs -help "command here" - Basic command to have help
+
 hdfs dfs -df - Shows the capacity of the cluster: size, used, availabe, use%
+
 ls - List the files
+
 ls -lrt - Show the files on local machine
 
+
 hdfs dfs -mkdir "/name here" - Create a directory
+
 sudo -u hdfs hdfs dfs -mkdir /user/"nome_tal"
+
 hdfs dfs -ls/
 
+
 hdfs dfs -put - Copy files from the local file system into fs
+
 hdfs dfs -cat - Reads and displays the entire file
+
 hdfs dfs -tail - Reads and displays a small portion of the file (the end of it)
+
 hdfs dfs -fsck - Details about the file (its size, how many blocks it's been splitted into, number of data nodes and racks, servers with the replicas...)
 
+
 hdfs dfs -rm - To remove
+
 hdfs dfs -expunge - To empty the trash
-hdfs dfs -appendTofile "tal" - 
+
+hdfs dfs -appendTofile "tal"
