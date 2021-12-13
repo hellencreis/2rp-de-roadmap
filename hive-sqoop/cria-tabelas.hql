@@ -1,7 +1,6 @@
 CREATE TABLE generation_hellen_reis
 (
-  col type
-	generation int
+  	generation int
 	date_introduced date
 )
 STORED AS ORC;
@@ -9,7 +8,7 @@ STORED AS ORC;
  
  CREATE TABLE pokemon_hellen_reis
  (
-  idnum int 
+  	idnum int 
 	name string  
 	hp int 
 	speed int 
