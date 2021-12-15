@@ -1,4 +1,4 @@
-#Exportar dados da tabela pokemon_table para outra tabela (new_table) em outro database (new_db)
+#Exportar dados da tabela pokemon_table para outra tabela (new_sqoop_pokemon) em outro database (Sqoop):
 
 sqoop export \
 --table
