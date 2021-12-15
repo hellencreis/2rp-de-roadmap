@@ -1,7 +1,11 @@
 #Exportar dados da tabela pokemon_table para outra tabela (new_table) em outro database (new_db)
 
-USE new_db;
-
-CREATE TABLE new_pokemon_table
-AS
-SELECT idnum, name, hp, speed FROM work_dataeng.pokemon_hellen;
+sqoop export \
+--table
+work_dataeng.pokemon_hellen \
+--export-dir
+hdfs://bigdataclu-ns/user/hive/warehouse/work_dataeng.db/pokemon_hellen \
+--table
+new_sqoop_pokemon \
+--columns
+idnum, name, hp, speed \
